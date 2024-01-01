@@ -221,4 +221,9 @@ def global_to_local(global_position, global_home):
 * Filled in backyard_flyer.py
 
 
+## Sample result
+
+# Drone Journey
+
+![Drone Journey](drone_journey_plot.png)
 
