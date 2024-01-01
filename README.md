@@ -106,6 +106,7 @@ To log data while flying manually, run the `drone.py` script as shown below:
 python drone.py
 ```
 
+
 Run this script after starting the simulator. It connects to the simulator using the Drone class and runs until tcp connection is broken. The connection will timeout if it doesn't receive a heartbeat message once every 10 seconds. The GPS data is automatically logged.
 
 To stop logging data, stop the simulator first and the script will automatically terminate after approximately 10 seconds.
@@ -190,6 +191,12 @@ After filling in the appropriate callbacks, you will run the mission:
 
 ```sh
 python backyard_flyer.py
+```
+
+or from within the docker container:
+
+```sh
+python backyard_flyer.py --host host.docker.internal
 ```
 
 Similar to the manual flight, the GPS data is automatically logged to the specified log file.
