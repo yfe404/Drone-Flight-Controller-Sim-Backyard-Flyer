@@ -22,7 +22,8 @@ plt.title('Drone Journey')
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
 plt.grid(True)
+plt.savefig('drone_journey_plot.png')
 plt.show()
 
-# Save the plot as an image file (e.g., PNG)
-plt.savefig('drone_journey_plot.png')
+
+
