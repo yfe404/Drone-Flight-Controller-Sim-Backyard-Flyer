@@ -6,8 +6,10 @@ The python code you write is similar to how the drone would be controlled from a
 ## Step 1: Download the Simulator
 If you haven't already, download the version of the simulator that's appropriate for your operating system [from this repository](https://github.com/udacity/FCND-Simulator-Releases/releases).
 
-## Step 2: Set up your Python Environment
-If you haven't already, set up your Python environment and get all the relevant packages installed using Anaconda following instructions in [this repository](https://github.com/udacity/FCND-Term1-Starter-Kit)
+## Step 2: Set up your Python Environment Using Docker
+docker build . -t drone 
+docker run --network host --rm --name drone -v $(pwd):/app -it drone
+
 
 ## Step 3: Clone this Repository
 ```sh
